@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="pokedex.css">
+    <script src="main.js"></script>
+    <title>pokedex/title>
+</head>
+<body>
+    <!-- <form action="">
+    <input type="text" id="search" placeholder="search Pokémon...">
+    <label for="search"> search</label>
+    </form>
+    <div id="pokemon-container"></div>
+    <div id="pokemon-modal" class="modal">  
+        
+    </div> -->
+
+    <section class="navbar navbar-1" id="navbar">
+        <div class="logo" id="logo">
+            <img class="imagen imagen-logo" src="assets/logo.webp" alt="logo de pokemon">
+            <img class="imagen imagen-logo-2" src="assets/logoapi.png" alt="logo de api">
+        </div>
+    </section>
+    <section class="header">
+        
+        <div class="card">
+            <div class="info">
+                <h1 class="h1-card">¿Qué es POKEAPI?</h1>
+                <p class="p-card">POKEAPI es una API RESTFUL que esta vinculada a 
+                    una extensa base de datos de Pokemon. Esta
+                    API además de ser gratis y de libre acceso,
+                    esta disponible para que la comunidad de
+                    desarrolladores puedan hacer pruebas con ella.
+                </p>
+                <div class="pokeapi">
+                    <a href="https://pokeapi.co/" target="_blank">
+                        <img src="./assets/pokeapi_256.png" width="100px" alt="logo de pokeapi">
+                    </a>
+                    <span>Visita:<a href="https://pokeapi.co/" target="_blank"> pokeapi.co</a></span>
+                </div>
+            </div>
+        </div>
+        
+        <lottie-player class="fire" src="https://assets3.lottiefiles.com/packages/lf20_ombydkwg.json"  
+        background="transparent"  speed="1"  style="width: 800px; height: 800px;"  loop  autoplay></lottie-player>
+        <div class="button">
+            <a href="#main">
+                <svg xmlns="http://www.w3.org/2000/svg" width="72" height="72" fill="#155263" class="bi bi-arrow-down-circle-fill bottom-arrow" viewBox="0 0 16 16">
+                    <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.5 4.5a.5.5 0 0 0-1 0v5.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V4.5z"/>
+                </svg>
+            </a>
+        </div>
+    </section>
+
+    <section id="main" class="section">
+        <div class="contenido">
+            <div class="contenedor-buscador">
+                <div class="container">
+                    <form id="form" role="search" method="get" class="search-form form" action="">
+                      <label>
+                          <span class="screen-reader-text">Search for...</span>
+                      </label>
+                      <div class="searchbox">
+                        <input id="search" type="text" placeholder="Buscar Pokémon" spellcheck="false">
+                        <a target="_blank"><i class="fa fa-search"></i></a>
+                      </div>
+                      <input id="btn-search" type="submit" class="search-submit button-search" value="Go!" />
+                  </form>
+                </div>
+                <div class="select">
+                    <select name="slct" id="slct">
+                      <option selected="true" disabled="disabled" >Todos</option>
+                      <!--<option value="1">Planta</option>
+                      <option value="2">Agua</option>
+                      <option value="3">Fuego</option>-->
+                    </select>
+                </div>
+            </div>
+            <div class="contenedor-pokemones" id="contenedor-pokemones" value='0'>
+                <!-- CARGAMOS DATOS-->
+            </div>
+        </div>
+    </section>
+
+</body>
+</html>
